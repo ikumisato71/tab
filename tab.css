@@ -32,6 +32,22 @@
   transition: all.3s;
 }
 
+[data-tab="01"],
+[data-tab="02"],
+[data-tab="03"] {
+  background-color: rgb(233, 239, 241);
+  padding: 10px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+[data-tab="01"]:hover,
+[data-tab="02"]:hover,
+[data-tab="03"]:hover {
+  background-color: rgb(216, 233, 146);
+  color: #fff;
+}
+
 .tab__menu-item:last-of-type {
   margin-right: 0px;
 }
