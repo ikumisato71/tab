@@ -31,6 +31,6 @@
 // 箱の中身の要素
 // ①tabMenus=tab__menu-item
 // ②tabTargetData=クリックイベントで発生したdata-tabの属性を取得
-// ③tabList=tab__menuとその兄弟tab__panelたち
-// ④tabItems=tab__menuとその兄弟tab__panelたちtab__menu-item
-// ⑤tabPanelItems=tab__menuとその兄弟tab__panelたちとtab__panel-box
+// ③tabList=tab__menu にふくまれるdata-tab 01〜03まで
+// ④tabItems=③のtab__menuとその兄弟tab__panelたちtab__menu-item
+// ⑤tabPanelItems=③tab__menuとその兄弟tab__panelたちとtab__panel-box
