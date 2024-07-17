@@ -16,6 +16,8 @@
   function tabSwitch(e) {
     // クリックされた要素のデータ属性を取得
     const tabTargetData = e.currentTarget.dataset.tab;
+    console.log(e.currentTarget);
+    console.log(e.currentTarget.dataset.tab);
     // クリックされた要素の親要素と、その子要素を取得
     const tabList = e.currentTarget.closest(".tab__menu");
     console.log(tabList);
