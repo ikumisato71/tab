@@ -8,6 +8,7 @@
       const tabTargetData = e.currentTarget.dataset.tab;
       console.log(tabTargetData);
       const tabList = e.currentTarget.closest(".tab__menu");
+      console.log(tabList);
       const tabItems = tabList.querySelectorAll(".tab__menu-item");
       const tabPanelItems =
         tabList.nextElementSibling.querySelectorAll(".tab__panel-box");
