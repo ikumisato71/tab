@@ -6,6 +6,7 @@
   tabMenus.forEach((tabMenu) => {
     tabMenu.addEventListener("click", (e) => {
       const tabTargetData = e.currentTarget.dataset.tab;
+      console.log(tabTargetData);
       const tabList = e.currentTarget.closest(".tab__menu");
       const tabItems = tabList.querySelectorAll(".tab__menu-item");
       const tabPanelItems =
@@ -27,3 +28,9 @@
     });
   });
 }
+// 箱の中身の要素
+// ①tabMenus=tab__menu-item
+// ②tabTargetData=クリックイベントで発生したdata-tabの属性を取得
+// ③tabList=tab__menuとその兄弟tab__panelたち
+// ④tabItems=tab__menuとその兄弟tab__panelたちtab__menu-item
+// ⑤tabPanelItems=tab__menuとその兄弟tab__panelたちとtab__panel-box
