@@ -25,8 +25,8 @@
   margin-right: 6px;
   background-color: #fff;
   color: #ccc;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
   cursor: pointer;
   /* アニメーション */
   transition: all.3s;
