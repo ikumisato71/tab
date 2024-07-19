@@ -29,9 +29,19 @@
     });
   });
 }
-// 箱の中身の要素
+// 箱の中身、(HTML要素から作られたオブジェクト)
 // ①tabMenus=tab__menu-item
-// ②tabTargetData=クリックイベントで発生したdata-tabの属性を取得
-// ③tabList=tab__menu にふくまれるdata-tab 01〜03まで
-// ④tabItems=③のtab__menuとその兄弟tab__panelたちtab__menu-item
-// ⑤tabPanelItems=③tab__menuとその兄弟tab__panelたちとtab__panel-box
+
+// ②tabTargetData=クリックイベントで発生したdata-tabの属性の値を取得
+// （currentTargetはイベントリスナーがアタッチされてる要素、eは引数でイベントの略）
+// menu1をクリックしたときのe.currentTargetは
+// <li class="tab__menu-item " data-tab="01">menu1</li>を示す
+
+// ③tabList=tab__menu にふくまれるリストのdata-tab 01〜03に一番近い親要素とtab__menu
+// e.currentTarget.closest
+// closest　複数のタブメニューがサイト内にある時に、バグを起こさないよう、同じタブ内の近くの親要素と紐つける
+
+// ④tabItems=③のtabListとすべてのtab__menu-item
+
+// ⑤tabPanelItems=③のtabListとその兄弟tab__panelたちとtab__panel-box
+// nextElementSibling兄弟要素
